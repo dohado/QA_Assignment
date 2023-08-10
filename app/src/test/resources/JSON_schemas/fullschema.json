@@ -1,0 +1,85 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1691704295.json",
+  "title": "Root",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "symbol",
+    "name",
+    "date",
+    "lastPrice",
+    "change",
+    "bid",
+    "ask"
+  ],
+  "properties": {
+    "symbol": {
+      "$id": "#root/symbol",
+      "title": "Symbol",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "ac"
+      ],
+      "pattern": "^.*$"
+    },
+    "name": {
+      "$id": "#root/name",
+      "title": "Name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "some name"
+      ],
+      "pattern": "^.*$"
+    },
+    "date": {
+      "$id": "#root/date",
+      "title": "Date",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2023-08-10"
+      ],
+      "pattern": "^.*$"
+    },
+    "lastPrice": {
+      "$id": "#root/lastPrice",
+      "title": "Lastprice",
+      "type": "number",
+      "examples": [
+        125.15
+      ],
+      "default": 0.0
+    },
+    "change": {
+      "$id": "#root/change",
+      "title": "Change",
+      "type": "boolean",
+      "examples": [
+        false
+      ],
+      "default": true
+    },
+    "bid": {
+      "$id": "#root/bid",
+      "title": "Bid",
+      "type": "integer",
+      "examples": [
+        1
+      ],
+      "default": 0
+    },
+    "ask": {
+      "$id": "#root/ask",
+      "title": "Ask",
+      "type": "integer",
+      "examples": [
+        2
+      ],
+      "default": 0
+    }
+  }
+}
